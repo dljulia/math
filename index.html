@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/681796284a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+  <title>Таблица квадратов</title>
+</head>
+<body>
+  <div class="main">
+    <div class="launch">
+      <h1>Выберите режим</h1>
+      <div class="modes">
+        <span class="firstMode mode active">11-20</span>
+        <span class="secondMode mode">21-32</span>
+        <span class="thirdMode mode">11-32</span>
+      </div>
+      <div class="results hidden">
+        <h2>Результат</h2>
+        <div class="data">
+          <p class="timeText"></p>
+          <p class="correctText"></p>
+          <p class="mistakeText"></p>
+        </div>
+      </div>
+      <button class="start">Старт</button>
+    </div>
+
+    <div class="game hidden">
+      <span id="timer" class="timer">00:00</span>
+  
+      <div class="answers">
+        <span class="mistakes">0</span>
+        <span class="correct">0</span>
+      </div>
+      
+      <div class="example">
+        <p><span class="number"></span><sup>2</sup> = <span class="answer"></span></p>
+      </div>
+  
+      <div class="buttons">
+        <button class="numberButton">1</button>
+        <button class="numberButton">2</button>
+        <button class="numberButton">3</button>
+        <button class="numberButton">4</button>
+        <button class="numberButton">5</button>
+        <button class="numberButton">6</button>
+        <button class="numberButton">7</button>
+        <button class="numberButton">8</button>
+        <button class="numberButton">9</button>
+        <button class="cancel"><i class="fa-solid fa-xmark"></i></button>
+        <button class="numberButton">0</button>
+        <button class="next"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
